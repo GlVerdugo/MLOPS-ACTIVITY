@@ -11,3 +11,21 @@ repos:
   hooks:
   - id: flake8
     args: [--ignore=E501]
+
+- repo: https://github.com/pre-commit/mirrors-isort
+  rev: ''  # Use the revision sha / tag you want to point at
+  hooks:
+  - id: isort
+
+- repo: local
+  hooks:
+  - id: pylint
+    name: pylint
+    entry: pylint
+    language: system
+    types: [python]
+    args:
+      [
+        "-rn", # Only display messages
+        "-sn", # Don't display the score
+      ]
