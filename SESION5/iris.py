@@ -7,11 +7,14 @@ from sklearn.linear_model import \
 X, y = load_iris(return_X_y=True)
 
 # Train the model using regresion logistic
-clf = LogisticRegression(solver="lbfgs", max_iter=1000, multi_class="multinomial").fit(
-    X, y
-)
+clf = LogisticRegression(
+    solver='lbfgs',
+    max_iter=1000,
+    multi_class='multinomial').fit(
+        X,
+    y)
 # Define iris types
-iris_type = {0: "setosa", 1: "versicolor", 2: "virginica"}
+iris_type = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
 
 
 # Define dummy values
@@ -23,9 +26,5 @@ X = [sepal_length, sepal_width, petal_length, petal_width]
 # Make a prediction
 
 prediction = clf.predict_proba([X])
-print(
-    {
-        "class": iris_type[np.argmax(prediction)],
-        "probability": round(max(prediction[0]), 2),
-    }
-)
+print({'class': iris_type[np.argmax(prediction)],
+      'probability': round(max(prediction[0]), 2)})
