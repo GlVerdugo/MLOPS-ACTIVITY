@@ -11,8 +11,7 @@ clf = LogisticRegression(
     solver='lbfgs',
     max_iter=1000,
     multi_class='multinomial').fit(
-        X,
-    y)
+        X, y)
 # Define iris types
 iris_type = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
 
