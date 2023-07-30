@@ -1,7 +1,6 @@
 import numpy as np  # Import in incorrect order
 from sklearn.datasets import load_iris  # Import in incorrect order
-from sklearn.linear_model import \
-    LogisticRegression  # Import in incorrect order
+from sklearn.linear_model import LogisticRegression  # Import in incorrect order    
 
 # Load data from sklearn
 X, y = load_iris(return_X_y=True)
