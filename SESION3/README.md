@@ -35,9 +35,9 @@ Follow the instructions below to do the activity.
   
         cycler==0.11.0
         fonttools==4.41.1
-        joblib==1.1.1
+        joblib==1.3.1
         kiwisolver==1.4.4
-        matplotlib==3.5.0
+        matplotlib==3.7.2
         numpy==1.25.1
         packaging==23.1
         pandas==2.0.3
@@ -58,7 +58,7 @@ Follow the instructions below to do the activity.
     </details>
     
 
-4. Open the `ACTIVIDAD SESION3\end_to_end_machine_learning_project.ipynb` notebook and click on `Run All`. 
+4. Open the `SESION3\end_to_end_machine_learning_project_3-10.ipynb` notebook and click on `Run All`. 
     > **IMPORTANT!**  
     Do not forget to select the Python 3.9.10 kernel you have already created.
 
