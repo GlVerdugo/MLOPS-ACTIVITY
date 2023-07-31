@@ -26,7 +26,7 @@ class MissingIndicator(BaseEstimator, TransformerMixin):
 #X[new_col] = X[var].isna().astype("bool")
 
 # Leer el csv sin aplicar transformaciones
-df = pd.read_csv("mlops/module-2/session-6/activity/raw-data.csv")
+df = pd.read_csv("SESION6\raw-data.csv")
 
 # Imprimir los primeros datos
 print(df.head(10))
